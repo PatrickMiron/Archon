@@ -1,0 +1,8 @@
+{
+  "claude-code.mcpServers": {
+    "archon": {
+      "url": "http://localhost:20051/mcp",
+      "headers": {}
+    }
+  }
+}
