@@ -2,6 +2,27 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Specialized Agents
+
+For specific types of tasks, use these specialized agents:
+
+- **Claude Code Configuration/MCP Issues**: Use `@claude-code-specialist` agent for:
+  - MCP server setup and troubleshooting
+  - VS Code extension configuration
+  - SSH port forwarding for remote MCP servers
+  - Scope management (local, project, user)
+  - Common configuration issues
+
+- **Codebase Analysis**: Use `@codebase-analyst` agent for:
+  - Discovering patterns and conventions
+  - Finding similar implementations
+  - Understanding architecture
+
+- **Library Research**: Use `@library-researcher` agent for:
+  - External library documentation
+  - Integration patterns
+  - Best practices for third-party tools
+
 ## Beta Development Guidelines
 
 **Local-only deployment** - each user runs their own instance.
