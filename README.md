@@ -85,8 +85,8 @@ This new vision for Archon replaces the old one (the agenteer). Archon used to b
    ```
 
    IMPORTANT NOTES:
-   - For cloud Supabase: they recently introduced a new type of service role key but use the legacy one (the longer one).
-   - For local Supabase: set SUPABASE_URL to http://host.docker.internal:8000 (unless you have an IP address set up).
+   - For cloud Supabase: They recently introduced a new type of service role key but use the legacy one (the longer one).
+   - For local Supabase: Set `SUPABASE_URL` to http://host.docker.internal:8000 (unless you have an IP address set up). To get `SUPABASE_SERVICE_KEY` run `supabase status -o env`.
 
 3. **Database Setup**: In your [Supabase project](https://supabase.com/dashboard) SQL Editor, copy, paste, and execute the contents of `migration/complete_setup.sql`
 
@@ -325,7 +325,6 @@ By default, Archon services run on the following ports:
 - **archon-mcp**: 8051
 - **archon-agents**: 8052 (optional)
 - **archon-agent-work-orders**: 8053 (optional)
-- **archon-docs**: 3838 (optional)
 
 ### Changing Ports
 
@@ -338,7 +337,6 @@ ARCHON_SERVER_PORT=8181
 ARCHON_MCP_PORT=8051
 ARCHON_AGENTS_PORT=8052
 AGENT_WORK_ORDERS_PORT=8053
-ARCHON_DOCS_PORT=3838
 ```
 
 Example: Running on different ports:
